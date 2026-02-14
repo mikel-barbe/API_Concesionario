@@ -35,20 +35,27 @@ Base path: `/api/clientes`
 
 **Ejemplo (GET):**
 ```http
-GET http://localhost:8080/api/clientes
+GET http://localhost:8080/api/clientes/1
 ```
 ```json
 {
-  "nombre": "Carlos",
-  "apellidos": "Gómez Ruiz",
-  "email": "carlos.gomez@gmail.com",
-  "telefono": "612345678",
-  "direccion": "Calle Mayor 12",
-  "ciudad": "Pamplona",
-  "cp": "31001",
-  "pais": "España",
-  "tipo": "Particular",
-  "documento": "12345678Z"
+  "total": 1,
+  "code": 1,
+  "data": {
+    "tipo": "DNI",
+    "nombre": "Carlos",
+    "apellidos": "García López",
+    "documento": "12345678Z",
+    "email": "carlos.garcia.lopez@gmail.com",
+    "telefono": "+34 612 345 678",
+    "direccion": "Calle Mayor 12, 3º B",
+    "ciudad": "Madrid",
+    "cp": "28013",
+    "pais": "España",
+    "fechaAlta": "2024-12-21T13:52:54.000Z",
+    "id": 1
+  },
+  "mensaje": "Cliente encontrado"
 }
 ```
 ## 📜 Licencia
